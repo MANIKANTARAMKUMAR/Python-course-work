@@ -181,3 +181,59 @@ def shoot(bullets):
     return bullets
 shoot(10)
 """
+'''
+def wish(name):
+    return f"Hello, {name}!"
+print(wish("Alice"))
+print(wish("Bob"))
+
+wish1=lambda name: f"Hello, {name}!"
+print(wish1("Alice"))
+'''
+'''
+greatest=lambda a,b: a if a>b else b
+print (greatest(10,20))
+
+sum1=lambda a,b,c: a+b+c
+print(sum1(10,20,30))
+'''
+'''
+def square(n):
+    b=[]
+    for i in range(1,n+1):
+        if i%2==0:
+            pass
+        else:
+            b.append(i**2)
+    print(b)
+square(7)
+k=list(filter(lambda x:x%2!=0,range(1,8)))
+
+
+
+a=[1,0,0,0,0,2,4,5,7,6,0,1,0]
+b=[]
+for i in a:
+    if i!=0:
+        b.append(i)
+print(b)
+
+s="helloworld"
+v="aeiou"
+n=list(filter(lambda s:s in v,s))
+print(n)
+
+l=[1,0,0,2,3,0,4,0,5]
+n=list(filter(lambda i:i!=0,l))
+print(n)
+'''
+'''from functools import reduce
+l=[1,2,3,4,5]
+s=reduce(lambda a,b:a+b,l)
+print(s)'''
+
+from functools import reduce
+names=["sai","ram","ravi","raju"]
+s=reduce(lambda a,b:a+" "+b,names)
+print(s)
+
