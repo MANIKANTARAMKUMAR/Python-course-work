@@ -231,9 +231,131 @@ print(n)
 l=[1,2,3,4,5]
 s=reduce(lambda a,b:a+b,l)
 print(s)'''
-
+'''
 from functools import reduce
 names=["sai","ram","ravi","raju"]
 s=reduce(lambda a,b:a+" "+b,names)
 print(s)
 
+a=int(input("enter a number:"))
+b=[]
+for i in range (1,a+1):
+    if i%2==0:
+        pass
+    else:
+        b.append(i**2)
+print(b)
+'''
+'''
+a=int(input("enter a number:"))
+b=""
+for i in range (1,a+1):
+    for j in range(1,i+1):
+        b+=str(i+j)
+    print(b) 
+'''
+'''
+import ATM
+u_PIN=int(input("Enter your PIN:"))
+if ATM.validate_PIN(u_PIN):
+    print("PIN validation successful.")
+    while True:
+        print("/n/n/n")
+        print("1. Check Balance")
+        print("2. Deposit Money")
+        print("3. Withdraw Money")
+        print("4. view Transaction History")
+        print("5. Exit")
+        choice=int(input("Enter your choice:"))
+        if choice==1:
+            ATM.check_balance()
+        elif choice==2:
+            amount=float(input("Enter amount to deposit:"))
+            ATM.deposit_money(amount)
+        elif choice==3:
+            amount=float(input("Enter amount to withdraw:"))
+            ATM.withdraw_money(amount)
+        elif choice==4:
+            ATM.view_transaction_history()
+        elif choice==5:
+            print("Thank you for using the ATM. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+else:
+    print("Invalid PIN. Access denied.")
+
+'''
+'''
+from ATM import login,check_balance,deposit_money,withdraw_money,view_transaction_history,validate_PIN
+u_PIN=int(input("Enter your PIN:"))
+if ATM.validate_PIN(u_PIN):
+    print("PIN validation successful.")
+    while True:
+        print("/n/n/n")
+        print("1. Check Balance")
+        print("2. Deposit Money")
+        print("3. Withdraw Money")
+        print("4. view Transaction History")
+        print("5. Exit")
+        choice=int(input("Enter your choice:"))
+        if choice==1:
+            check_balance()
+        elif choice==2:
+            amount=float(input("Enter amount to deposit:"))
+            deposit_money(amount)
+        elif choice==3:
+            amount=float(input("Enter amount to withdraw:"))
+            withdraw_money(amount)
+        elif choice==4:
+            view_transaction_history()
+        elif choice==5:
+            print("Thank you for using the ATM. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+else:
+    print("Invalid PIN. Access denied.")
+'''
+'''
+from ATM import *
+u_PIN=int(input("Enter your PIN:"))
+if ATM.validate_PIN(u_PIN):
+    print("PIN validation successful.")
+    while True:
+        print("/n/n/n")
+        print("1. Check Balance")
+        print("2. Deposit Money")
+        print("3. Withdraw Money")
+        print("4. view Transaction History")
+        print("5. Exit")
+        choice=int(input("Enter your choice:"))
+        if choice==1:
+            ATM.check_balance()
+        elif choice==2:
+            amount=float(input("Enter amount to deposit:"))
+            ATM.deposit_money(amount)
+        elif choice==3:
+            amount=float(input("Enter amount to withdraw:"))
+            ATM.withdraw_money(amount)
+        elif choice==4:
+            ATM.view_transaction_history()
+        elif choice==5:
+            print("Thank you for using the ATM. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+else:
+    print("Invalid PIN. Access denied.")
+'''
+
+import random 
+random.seed(10)
+print((random.randint(00,123)))
+print(random.uniform(1,10))
+names=["sai","ram","ravi","raju"]
+print(random.choice(names))
+print(random.choices(names,k=2))
+random.shuffle(names)
+print(names)
+print(random.sample(names,2))
