@@ -348,7 +348,7 @@ if ATM.validate_PIN(u_PIN):
 else:
     print("Invalid PIN. Access denied.")
 '''
-
+'''
 import random 
 random.seed(10)
 print((random.randint(00,123)))
@@ -359,3 +359,70 @@ print(random.choices(names,k=2))
 random.shuffle(names)
 print(names)
 print(random.sample(names,2))
+'''
+'''
+a=list(map(int,input("enter numbers:").split(',')))
+b=[]
+for i in a:
+    if i%2==0:
+        b.append(i**2)
+print(b)
+'''
+
+'''
+import datetime
+now=datetime.datetime.now()
+print("Current date and time:",now)
+
+from datetime import date,time,datetime
+today=date.today()
+print("Today's date:",today)
+print("Current year:",today.year)
+print("current month",today.month)
+print("current day",today.day)
+print("current weekday:",today.weekday())
+print("current is iso weekday:",today.isoweekday())
+print("current iso format:",today.isoformat())
+
+'''
+'''
+from datetime import date,time,datetime
+now=datetime.now()
+print(now)
+
+print(now.year)
+print(now.month)
+print(now.day)
+print(now.hour)
+print(now.minute)
+print(now.second)
+print(now.microsecond)
+print(now.timetuple())
+print(now.isoformat())
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+print(now.strftime("%d/%m/%Y"))
+print(now.strftime("%I:%M :%S %p"))
+print(now.strftime("%A, %b, %d, %Y"))
+print(now.strftime("%I:%M:%S %p"))
+
+'''
+
+
+from datetime import date,time,datetime,timedelta
+now=datetime.now()
+print(now)
+
+print(now.year)
+print(now.month)
+print(now.day)
+print(now.hour)
+print(now.minute)
+print(now.second)
+print(now.microsecond)
+print(now.timetuple())
+print(now.isoformat())
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+print(now.strftime("%d/%m/%Y"))
+print(now.strftime("%I:%M :%S %p"))
+print(now.strftime("%A, %b, %d, %Y"))
+print(now.strftime("%I:%M:%S %p"))
