@@ -22,7 +22,18 @@ class summarize():
     def summarize(self):
         print("you can summarize")
 class instagramV4(instagramV3,autoscroll,summarize):
-    pass
+    def repost(self):
+        print("you can repost")
+
+
+
+
+
+
+
+
+
+        
 print("abhinav -instagramV3")
 abhinav=instagramV3()
 abhinav.note()
@@ -31,3 +42,6 @@ print("vishnu -instagramV2")
 vishnu=instagramV2()
 vishnu.postphoto("photo3.jpg")
 vishnu.postreels("reels3.mp4")
+instagramV4().autoscroll()
+instagramV4().summarize()
+instagramV4().repost()
