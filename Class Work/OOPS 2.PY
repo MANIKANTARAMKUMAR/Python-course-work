@@ -43,7 +43,8 @@ class instagram:
 
 abhinav=instagram("abhinav","abhi123","public")
 vishnu=instagram("vishnu","vishnu123","private")
-print("Userinfo\n{self.username}\n{self.__password}\n{self._profilepicture}")
+print(f"Userinfo\n{abhinav.username}\n{abhinav.getpwd()}\n{abhinav._profilepicture}")
+print(f"Userinfo\n{vishnu.username}\n{vishnu.getpwd()}\n{vishnu._profilepicture}")
 print(abhinav.username)
 print(vishnu.username)
 print(abhinav._profilepicture)
