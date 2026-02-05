@@ -96,3 +96,72 @@ print(np.cos(arr))
 print(np.sum(arr))
 print(np.mean(arr))
 print(np.median(arr))
+
+
+
+a = np.array([1, 2, 3, 4, 5])
+
+print(np.mean(a))
+print(np.var(a))
+print(np.std(a))
+
+
+print(np.min(arr))
+print(np.max(arr))
+
+arr = np.array([1,2,3,4,5])
+print(np.cumsum(arr))
+print(np.cumprod(arr))
+
+arr = np.array([10, 20, 30, 40, 50])
+
+print(arr%20==0)
+print(arr[arr%20==0])
+
+arr = np.array([1,4,2,2,2,3,3,3,3])
+sorted =np.sort(arr)
+print(sorted)
+
+unique_val=np.unique(arr)
+print(unique_val)
+
+
+arr = np.array([10, 20, 30])
+view_arr = arr.view()
+view_arr[0] = 100
+print(arr,view_arr)
+
+copy_arr = arr.copy()
+copy_arr[0] = 200
+print(arr,copy_arr)
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+print(np.dot(A, B))
+
+
+print(np.linalg.det(A))
+
+print(np.linalg.inv(A))
+
+eigenvalues, eigenvectors = np.linalg.eig(A)
+print(eigenvalues)
+
+print(eigenvectors)
+
+C = np.array([5, 11])
+solution = np.linalg.solve(A, C)
+print(solution)
+
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+vertical_stack = np.vstack((A, B))
+horizontal_stack = np.hstack((A, B))
+print(vertical_stack)
+print(horizontal_stack)
+
+split_arr = np.split(np.array([1, 2, 3, 4, 5, 6]), 3)
+
+print(split_arr)
+
