@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo Elements</title>
+    <style>
+        body{
+            background:linear-gradient(to right, violet,indigo,blue,green,yellow,orange,red);
+            color:black;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        body::selection{
+            background-color: azure;
+            color:blue;
+        }
+        h1{
+            font-family: cursive;
+            font-size: 30px;
+            font-weight: 100;
+            background-color: aquamarine;
+        }
+        h1::selection{
+            background-color: aquamarine;
+            color:chartreuse;
+        }
+        p{
+            font-size:15px;
+            font-weight:bold;
+
+        }
+        p::first-line{
+            font-size: 25px;
+            font-style: italic;
+            color:black;
+            font-family: cursive;
+            font-weight: bold;
+        }
+        h1::before{
+            content:"cold";
+            font-weight: bold;
+            
+        }
+        button:hover{
+            background-color: blueviolet;
+            color:aliceblue;
+            height :29%;
+
+        }
+        button::selection{
+            color:aquamarine;
+            background-color: black;
+        }
+        a:link{
+            color:purple;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO INDIA</h1>
+    <P><b><I>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eum commodi provident, quasi ab nulla id voluptatum temporibus minima animi cumque consequatur perspiciatis, nemo possimus exercitationem illo quaerat amet laborum.</I></b></P>
+    <button>win</button>
+</body>
+</html>
