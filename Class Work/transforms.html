@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tramsforms animations</title>
+    <style>
+        body{
+            height:100vh;
+            background-color: aquamarine;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin:10px;
+            padding:10px;
+        }
+        .container{
+            height:120vh;
+            width:20%;
+            border:1px solid burlywood;
+            margin:10px;
+            padding:10px;
+            display:flex;
+            justify-content: center;
+            border-radius: 5%;
+        }
+        .translate{
+            background-color: blue;
+            height: 150px;
+            width: 120px;
+            border-radius: 6px;
+
+        }
+        .translate:hover{
+            transform:translatey(40px);
+        }
+        .rotate{
+            background-color: rgb(128, 0, 255);
+            height: 150px;
+            width: 120px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .rotate:hover{
+            transform:rotate(55deg);
+        }
+        .rotetex{
+            background-color: rgb(255, 0, 0);
+            height: 150px;
+            width: 120px;
+            border-radius: 6px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="translate"></div>
+        <div class="rotate"></div>
+        <div class="rotateX"></div>
+    </div>
+    
+    
+</body>
+</html>
