@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paytm</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color:aliceblue;
+        height:1px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .navbar{
+        background-color: aliceblue;
+        padding:10px 20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar ul{
+        display:flex;
+        list-style-type:none;
+        gap:20px;
+
+    }
+    .navbar ul li{
+        font-size: 15px;
+        color:black;
+        font-weight: bold;
+
+    }
+    .naval ul li :hover{
+        color:rgb(133, 189, 211);
+
+    }
+    .navbar h2{
+        color:rgb(58, 179, 227);
+    }
+    .navbar button{
+        color:rgb(0, 0, 0);
+        background-color: rgb(62, 182, 230);
+        width:8%;
+        border:none;
+        border-radius: 5px;
+        padding:5px;
+    }
+    #Download{
+        padding : 30px 50px;
+        background-color: peachpuff;
+
+    }
+    #Download h1{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    #Download p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    #Download button{
+        width:20px;
+        background-color: black;
+        border-radius: 20px;
+        padding:10px;
+        color:aliceblue;
+        border:none;
+    }
+    #services{
+        padding:20px 30px;
+        background-color: rgb(49, 176, 226);
+    }
+    #services h3{
+        color:aliceblue;
+        font-size: 20px;
+        padding-bottom: 10px;
+
+    }
+    .items-container{
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        gap:40px;
+        margin-bottom: 10px;
+
+    }
+    .item{
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    #upi{
+        padding:25px 30px;
+    }
+    #upi h3{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    #upi p{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    #wallet{
+        background-color: blueviolet;
+        padding:50px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        color: aliceblue;
+    }
+    
+</style>
+<body>
+    <nav class = "navbar">
+        <h2 class = "logo">Paytm</h2>
+        <ul class ="nav-items">
+            <li>consumers</li>
+            <li>Business</li>
+            <li>company</li>
+            <li>careers</li>
+        </ul>
+        <button>Sign In</button>
+    </nav>
+    <section id="'Download">
+        <h1>Indias most loved payments app</h1>
+        <p>Recharge , pay Bills ,send money & More</p>
+        <button>Download</button>
+    </section>
+    <section id="services">
+        <h3>Recharge & Pay Bills</h3>
+        <div class ="items-container">
+            <div class="items">mobile</div>
+            <div class="items">tv</div>
+            <div class="items">rent</div>
+            <div class="items">water</div>
+            <div class="items">cable</div>
+        </div>
+    </section>
+    <section id="upi">
+        <h3>Paytm UPI</h3>
+        <p>Instant,secure & fast payments directly from your bank</p>
+    </section>
+    <section id="wallet">
+        <h3>Paytm wallet & upi</h3>
+
+    </section>
+    
+</body>
+</html>
